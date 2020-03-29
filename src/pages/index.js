@@ -75,6 +75,8 @@ export const query = graphql`
             frontmatter {
                 title
                 description
+                descriptionRight
+                descriptionLeft
             }
             htmlAst
         }

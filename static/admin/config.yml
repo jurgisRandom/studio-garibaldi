@@ -1,9 +1,7 @@
 backend:
-    name: github
-    repo: studioGaribaldi/studio-garibaldi
-    branch: master
-    site_domain: https://studio-garibaldi.netlify.com/
-
+  name: github
+  repo: studioGaribaldi/studio-garibaldi
+display_url: https://studio-garibaldi.netlify.com
 publish_mode: editorial_workflow
 media_folder: 'static/assets/img'
 public_folder: 'assets/img'

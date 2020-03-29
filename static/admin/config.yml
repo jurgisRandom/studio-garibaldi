@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: studioGaribaldi/studio-garibaldi
+    name: github
+    repo: studioGaribaldi/studio-garibaldi
 display_url: https://studio-garibaldi.netlify.com
 publish_mode: editorial_workflow
 media_folder: 'static/assets/img'
@@ -107,8 +107,8 @@ collections:
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
     #Pages (English)
-    - name: 'pages-en' # Used in routes, e.g., /admin/collections/blog
-      label: 'Pages (English)' # Used in the UI
+    - name: 'website-en' # Used in routes, e.g., /admin/collections/blog
+      label: 'Website (English)' # Used in the UI
       folder: 'pages' # The path to the folder where the documents are stored
       create: true # Allow users to create new documents in this collection
       slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
@@ -126,8 +126,8 @@ collections:
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
     #Pages (Portuguese)
-    - name: 'pages-pt' # Used in routes, e.g., /admin/collections/blog
-      label: 'Pages (Portuguese)' # Used in the UI
+    - name: 'website-pt' # Used in routes, e.g., /admin/collections/blog
+      label: 'Website (Portuguese)' # Used in the UI
       folder: 'pages' # The path to the folder where the documents are stored
       create: true # Allow users to create new documents in this collection
       slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
@@ -143,3 +143,22 @@ collections:
             }
           - { label: 'isPage', name: 'page', widget: 'hidden', default: true }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+
+    - name: 'website-nl' # Used in routes, e.g., /admin/collections/blog
+      label: 'Website (Dutch)' # Used in the UI
+      folder: 'pages' # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+      extension: 'nl.md'
+      format: frontmatter
+      fields: # The fields for each document, usually in front matter
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - {
+                label: 'Date',
+                name: 'date',
+                widget: 'datetime',
+                format: 'YYYY-MM-DD hh:mm:ss',
+            }
+          - { label: 'isPage', name: 'page', widget: 'hidden', default: true }
+          - { label: 'Left Corner', name: 'body', widget: 'markdown' }
+          - { label: 'Right Corner', name: 'body2', widget: 'markdown' }

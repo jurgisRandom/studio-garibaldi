@@ -1,6 +1,13 @@
 ---
-title: 'About'
-date: 2019-07-01 01:21:23
+title: About
+descriptionLeft: >-
+  Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze
+  Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze
+  Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze
+  Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze Deze
+  Deze Deze Deze Deze 
+descriptionRight: contact info DUTCH
+date: 2019-07-01T01:21:23.000Z
 page: true
 ---
 

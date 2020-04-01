@@ -4,7 +4,9 @@ descriptionLeft: >-
   Studio Garibaldi is in 2019 opgericht door Fabian Streefland en geeft
   juridisch advies aan particulieren en bedrijven. Daarnaast geeft Studio
   Garibaldi strategisch advies op het gebied van vastgoedontwikkeling.
-descriptionRight: studio@garibaldi.nl +31613971462
+descriptionRight: DE
+email: 'studio@garibaldi.nl '
+phone: '+31613971462'
 date: 2019-07-01T01:21:23.000Z
 page: true
 ---

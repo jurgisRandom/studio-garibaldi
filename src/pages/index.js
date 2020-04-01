@@ -12,6 +12,7 @@ import DescriptionLeft from '../components/DescriptionLeft'
 import DescriptionRight from '../components/DescriptionRight'
 
 const Index = ({ data: { markdownRemark } }) => {
+    console.log('markdownRemark:', markdownRemark)
     // useTranslations is aware of the global context (and therefore also "locale")
     // so it'll automatically give back the right translations
 
@@ -20,14 +21,19 @@ const Index = ({ data: { markdownRemark } }) => {
             <SEO title="Home" />
 
             <Logo />
-
-            <DescriptionLeft
-                data={markdownRemark.frontmatter.descriptionLeft}
-            />
-            <DescriptionRight
-                email={markdownRemark.frontmatter.email}
-                phone={markdownRemark.frontmatter.phone}
-            />
+            {!markdownRemark.frontmatter ? (
+                <p>loading...</p>
+            ) : (
+                <>
+                    <DescriptionLeft
+                        data={markdownRemark.frontmatter.descriptionLeft}
+                    />
+                    <DescriptionRight
+                        email={markdownRemark.frontmatter.email}
+                        phone={markdownRemark.frontmatter.phone}
+                    />
+                </>
+            )}
         </>
     )
 }

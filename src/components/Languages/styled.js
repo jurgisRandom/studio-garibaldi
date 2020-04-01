@@ -1,27 +1,27 @@
-import styled from 'styled-components';
-import media from 'styled-media-query';
-import { Link } from 'gatsby';
+import styled from 'styled-components'
+import media from 'styled-media-query'
+import { Link } from 'gatsby'
 
-export const LanguageWrapper = styled.ul`
-  display: flex;
-  position: absolute;
-  top: var(--space-sm);
-  right: var(--space-sm);
-  ${media.greaterThan('medium')`
-    margin-left: 0;
-    position: relative;
-    top: 0;
-    right: 0;
-  `}
-`;
+export const LanguageContainer = styled.div`
+    position: absolute;
+    right: 2.5rem;
+    top: 2.5rem;
+    height: fit-content;
 
-export const LanguageItem = styled.li`
-  margin-left: var(--space-sm);
-`;
+    ${media.lessThan('medium')`
+        position: absolute;
+        left: 3rem;
+        top: 70%;
+    `}
+    ${media.lessThan('535px')`
+        top: 65%;
+    `}
+`
 
 export const LanguageLink = styled(Link)`
-  display: inline-block;
-  margin-right: 0.5rem;
-  color: var(--grayColor);
-  font-size: 1.4rem;
-`;
+    display: inline-block;
+    margin-right: 0.5rem;
+    color: red;
+    font-size: 2.7rem;
+    text-decoration: none;
+`

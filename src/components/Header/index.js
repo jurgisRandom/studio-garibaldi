@@ -1,22 +1,8 @@
-import React, { useState } from 'react'
-import useTranslations from '../useTranslations'
-import Navigation from '../Navigation'
+import React from 'react'
 import Languages from '../Languages'
-import ButtonMenu from '../ButtonMenu'
-import Logo from '../Logo'
 
-import * as S from './styled'
-
-const Header = () => {
-    return (
-        <S.HeaderWrapper>
-            <S.Container>
-                <S.NavLanguages>
-                    <Languages />
-                </S.NavLanguages>
-            </S.Container>
-        </S.HeaderWrapper>
-    )
+const LanguageComponent = () => {
+    return <Languages />
 }
 
-export default Header
+export default LanguageComponent

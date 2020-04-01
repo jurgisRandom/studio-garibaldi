@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import media from 'styled-media-query';
+import { createGlobalStyle } from 'styled-components'
+import media from 'styled-media-query'
 
 const GlobalStyles = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/
@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
   figure, figcaption, footer, header, hgroup,
   menu, nav, output, ruby, section, summary,
   time, mark, audio, video {
+    height: inherit;
     margin: 0;
     padding: 0;
     border: 0;
@@ -33,6 +34,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     font-size: 62.5%;
+    height: 100%;
   }
   body {
     line-height: 1;
@@ -59,11 +61,13 @@ const GlobalStyles = createGlobalStyle`
     background: var(--body-bg);
     font-weight: 400;
     font-family: "Open Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-    font-size: 1.5rem;
+    min-height: 100%;
+    width: 100%;
+    font-size: 2.3rem;
     line-height: 160%;
     ${media.greaterThan('large')`
-      font-size: 1.7rem;
+      font-size: 2.3rem;
+
     `}
   }
   img {
@@ -75,10 +79,16 @@ const GlobalStyles = createGlobalStyle`
   a {
     color: var(--primaryColor)
   }
+  path {
+  fill: transparent;
+}
 
-  :root { 
-    --gray-extra-light: #eaeaea; 
-    --gray-light: #747d8d;  
+text {
+  fill: #FF9800;
+}
+  :root {
+    --gray-extra-light: #eaeaea;
+    --gray-light: #747d8d;
     --gray: #475060;
     --gray-dark: #2e333e;
 
@@ -86,14 +96,14 @@ const GlobalStyles = createGlobalStyle`
     --secondary-color: #2e333e;
     --thirdy-color: #001ff9;
 
-    --body-bg: #FFFFFF; 
+    --body-bg: #FFFFFF;
 
     --bg-light: var(--gray-extra-light);
     --bg-dark: var(--gray-dark);
 
     --border-light: var(--gray-light);
     --border-dark: var(--gray-dark);
-    
+
     --link-color: var(--primary-color);
     --link-color-hover: var(--thirdy-color);
 
@@ -104,9 +114,9 @@ const GlobalStyles = createGlobalStyle`
     --width-container: 1040px;
 
     --space: 2rem;
-    --space-sm: 1rem;
+    --space-sm: 5rem;
     --space-lg: 3rem;
 
   }
-`;
-export default GlobalStyles;
+`
+export default GlobalStyles

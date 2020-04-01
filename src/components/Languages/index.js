@@ -1,22 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import * as S from './styled'
 
 const Languages = () => {
+    const [language, setLanguage] = useState('EN')
     return (
-        <S.LanguageWrapper>
-            <S.LanguageItem>
-                <S.LanguageLink to="/" hrefLang="en">
-                    en-US
-                </S.LanguageLink>
-            </S.LanguageItem>
-
-            <S.LanguageItem>
-                <S.LanguageLink to="/nl" hrefLang="nl">
-                    NL
-                </S.LanguageLink>
-            </S.LanguageItem>
-        </S.LanguageWrapper>
+        <>
+            <S.LanguageContainer>
+                {language !== 'EN' ? (
+                    <S.LanguageLink
+                        onClick={() => setLanguage('EN')}
+                        to="/"
+                        hrefLang="en"
+                    >
+                        EN
+                    </S.LanguageLink>
+                ) : (
+                    <S.LanguageLink
+                        onClick={() => setLanguage('NL')}
+                        to="/nl"
+                        hrefLang="nl"
+                    >
+                        NL
+                    </S.LanguageLink>
+                )}
+            </S.LanguageContainer>
+        </>
     )
 }
 

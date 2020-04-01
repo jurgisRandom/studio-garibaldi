@@ -4,7 +4,9 @@ import * as S from './styled'
 const DescriptionRight = ({ email, phone }) => {
     return (
         <S.TextContainer>
-            <S.Text>{email}</S.Text>
+            <S.Text>
+                <a href="mailto:studio@garibaldi.nl">{email}</a>
+            </S.Text>
             <S.Text>{phone}</S.Text>
         </S.TextContainer>
     )

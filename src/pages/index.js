@@ -15,14 +15,13 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 
 const Index = ({ data: { markdownRemark } }) => {
-    console.log('markdownRemark:', markdownRemark)
     // useTranslations is aware of the global context (and therefore also "locale")
     // so it'll automatically give back the right translations
     return (
         <>
             <SEO title="Home" />
-            <Languages />
             <Logo />
+            <Languages />
 
             <DescriptionLeft
                 data={markdownRemark.frontmatter.descriptionLeft}

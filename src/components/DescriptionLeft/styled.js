@@ -7,19 +7,18 @@ export const TextContainer = styled.div`
     align-self: flex-end;
 
      ${media.greaterThan('huge')`
-    max-width: 20%;
-    background: orange;
+        max-width: 20%;
 
-    `} ${media.between('large', 'huge')`
-    max-width: 30%;
-    background: blue;
-    `} ${media.between('medium', 'large')`
-        background: green;
-        /* margin: 0 auto; */
+    `}
+    ${media.between('large', 'huge')`
+        max-width: 30%;
+    `}
+    ${media.between('medium', 'large')`
         max-width: 30%;
         left: 5rem;
         width: 100%;
-    `} ${media.lessThan('medium')`
+    `}
+    ${media.lessThan('medium')`
         margin: 0 auto;
         max-width: 80%;
         left: 3rem;
@@ -31,7 +30,7 @@ export const TextContainer = styled.div`
 
 export const Text = styled.p`
     line-height: 2.5rem;
-    color: red;
+    color: rgb(212, 34, 38);
     font-family: Helvetica;
 
     ${media.greaterThan('medium')`

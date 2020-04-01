@@ -8,15 +8,24 @@ export const LogoContainer = styled.figure`
     width: 30%;
 
     ${media.greaterThan('large')`
+        width: 70%;
 
     `}
     ${media.lessThan('large')`
-        margin-top: 15%;
-        height: 50%;
+        width: 50%;
+        height: 100%;
+        align-self: center;
+    `}
+    ${media.lessThan('medium')`
+        position: initial;
+        width: 100%;
+
     `}
 `
 export const Image = styled.img`
-    max-width: 50%;
+    max-width: 90%;
+    min-width: 20%;
+
     margin: 0 auto;
     height: auto;
 

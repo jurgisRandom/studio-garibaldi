@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
-
+import React from 'react'
+import { LocaleContext } from '../Layout'
 import * as S from './styled'
 
 const Languages = () => {
-    const [language, setLanguage] = useState('EN')
+    const { locale } = React.useContext(LocaleContext)
+
     return (
         <>
             <S.LanguageContainer>
-                {language !== 'EN' ? (
+                {locale !== 'en' ? (
                     <S.LanguageLink
-                        onClick={() => setLanguage('EN')}
+                        // onClick={() => setLanguage('EN')}
                         to="/"
                         hrefLang="en"
                     >
@@ -17,7 +18,7 @@ const Languages = () => {
                     </S.LanguageLink>
                 ) : (
                     <S.LanguageLink
-                        onClick={() => setLanguage('NL')}
+                        // onClick={() => setLanguage('NL')}
                         to="/nl"
                         hrefLang="nl"
                     >

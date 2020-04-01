@@ -6,17 +6,12 @@ export const Wrapper = styled.div``
 export const SiteContent = styled.section``
 
 export const Container = styled.div`
-    background-color: green;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    /* width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    */
+    padding: 5rem;
     ${media.lessThan('medium')`
-        justify-content: flex-end;
+        padding: 3rem;
         flex-direction: column;
 
   `}

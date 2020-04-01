@@ -9,36 +9,31 @@ export const TextContainer = styled.div`
 
     ${media.greaterThan('huge')`
         max-width: 20%;
-        background: orange;
-
     `}
 
     ${media.between('large', 'huge')`
-    max-width: 30%;
-    background: yellow;
+        max-width: 30%;
     `}
 
     ${media.between('medium', 'large')`
-        background: green;
-        /* margin: 0 auto; */
         max-width: 30%;
         right: 5rem;
         width: 100%;
     `}
 
     ${media.lessThan('medium')`
-    align-self: flex-end;
+        margin: 1rem auto 0;
 
         max-width: 80%;
-        left: 3rem;
         bottom: 6rem;
         width: 100%;
+        align-self: flex-end;
     `}
 `
 
 export const Text = styled.p`
     line-height: 2.5rem;
-    color: red;
+    color: rgb(212, 34, 38);
     font-family: Helvetica;
     text-align: right;
 

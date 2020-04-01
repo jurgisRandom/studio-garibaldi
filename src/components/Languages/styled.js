@@ -12,18 +12,23 @@ export const LanguageContainer = styled.div`
     align-content: flex-start;
 
     ${media.lessThan('medium')`
+        /* margin: 0 0 1rem 0; */
         position: inherit;
-        display: flex;
+        margin: 2rem auto;
+        max-width: 80%;
+        left: 3rem;
+        bottom: 15rem;
+        width: 100%;
+        align-self: flex-start;
     `}
     ${media.lessThan('535px')`
-        top: 65%;
+        /* top: 65%; */
     `}
 `
 
 export const LanguageLink = styled(Link)`
     display: inline-block;
-    /* margin-right: 0.5rem; */
-    color: red;
+    color: rgb(212, 34, 38);
     font-size: 2.7rem;
     text-decoration: none;
 `

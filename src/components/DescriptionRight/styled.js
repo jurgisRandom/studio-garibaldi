@@ -4,9 +4,8 @@ import { Link } from 'gatsby'
 
 export const TextContainer = styled.div`
     height: fit-content;
-    position: absolute;
-    bottom: 5rem;
-    right: 5rem;
+    align-self: flex-end;
+    margin-left: auto;
 
     ${media.greaterThan('huge')`
         max-width: 20%;
@@ -16,18 +15,20 @@ export const TextContainer = styled.div`
 
     ${media.between('large', 'huge')`
     max-width: 30%;
-    background: blue;
+    background: yellow;
     `}
 
     ${media.between('medium', 'large')`
         background: green;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         max-width: 30%;
         right: 5rem;
         width: 100%;
     `}
 
     ${media.lessThan('medium')`
+    align-self: flex-end;
+
         max-width: 80%;
         left: 3rem;
         bottom: 6rem;

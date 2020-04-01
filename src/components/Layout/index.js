@@ -15,7 +15,6 @@ const LocaleContext = React.createContext()
 const Layout = ({ children, pageContext: { locale } }) => (
     <LocaleContext.Provider value={{ locale }}>
         <GlobalStyles />
-        <Languages />
         <S.SiteContent role="main">
             <S.Container>{children}</S.Container>
         </S.SiteContent>

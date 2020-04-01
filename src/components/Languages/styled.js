@@ -3,15 +3,17 @@ import media from 'styled-media-query'
 import { Link } from 'gatsby'
 
 export const LanguageContainer = styled.div`
+    z-index: 999;
     position: absolute;
     right: 2.5rem;
     top: 2.5rem;
     height: fit-content;
+    display: flex;
+    align-content: flex-start;
 
     ${media.lessThan('medium')`
-        position: absolute;
-        left: 3rem;
-        top: 70%;
+        position: inherit;
+        display: flex;
     `}
     ${media.lessThan('535px')`
         top: 65%;
@@ -20,7 +22,7 @@ export const LanguageContainer = styled.div`
 
 export const LanguageLink = styled(Link)`
     display: inline-block;
-    margin-right: 0.5rem;
+    /* margin-right: 0.5rem; */
     color: red;
     font-size: 2.7rem;
     text-decoration: none;

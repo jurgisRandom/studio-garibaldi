@@ -9,7 +9,7 @@ export const LogoContainer = styled.figure`
 
     ${media.greaterThan('large')`
         width: 70%;
-
+        padding-bottom: 30rem;
     `}
     ${media.lessThan('large')`
         width: 50%;

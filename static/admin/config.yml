@@ -23,12 +23,6 @@ collections:
                 name: 'descriptionLeft',
                 widget: 'string',
             }
-          - {
-                label: 'Description Right',
-                name: 'descriptionRight',
-                widget: 'string',
-            }
-
           - { label: 'E-mail', name: 'email', widget: 'string' }
           - { label: 'Phone Number', name: 'phone', widget: 'string' }
 
@@ -54,11 +48,7 @@ collections:
                 name: 'descriptionLeft',
                 widget: 'string',
             }
-          - {
-                label: 'Description Right',
-                name: 'descriptionRight',
-                widget: 'string',
-            }
+
           - { label: 'E-mail', name: 'email', widget: 'string' }
           - { label: 'Phone Number', name: 'phone', widget: 'string' }
 

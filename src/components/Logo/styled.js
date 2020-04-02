@@ -14,6 +14,9 @@ export const LogoContainer = styled.figure`
         order: -1;
         flex: .8;
     `}
+    @media (min-height: 450px) and screen and (orientation: landscape) {
+        width: 25;
+    }
 `
 export const Image = styled.img`
     ${media.lessThan('medium')`

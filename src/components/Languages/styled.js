@@ -22,6 +22,7 @@ export const LanguageContainer = styled.div`
         position: inherit;
         align-self: flex-start;
         order:-1;
+        margin-bottom:4rem;
     `}
     ${media.lessThan('535px')`
         /* top: 65%; */

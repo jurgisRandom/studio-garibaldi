@@ -4,30 +4,34 @@ import { Link } from 'gatsby'
 
 export const TextContainer = styled.div`
     height: fit-content;
-    align-self: flex-end;
-    margin-left: auto;
+    border: 1px solid blue;
+    flex-grow: 0;
+    /* height: fit-content; */
+    /* align-self: flex-end; */
+    /* margin-left: auto; */
+    /* align-self: flex-end; */
+    /* justify-content: flex-end; */
 
     ${media.greaterThan('huge')`
-        max-width: 20%;
+        /* max-width: 20%; */
     `}
 
     ${media.between('large', 'huge')`
-        max-width: 30%;
+        /* max-width: 30%; */
     `}
 
     ${media.between('medium', 'large')`
-        max-width: 30%;
-        right: 5rem;
-        width: 100%;
+        /* max-width: 30%; */
+        /* right: 5rem; */
+        /* width: 100%; */
     `}
 
     ${media.lessThan('medium')`
-        margin: 1rem auto 0;
-
-        max-width: 80%;
-        bottom: 6rem;
-        width: 100%;
-        align-self: flex-end;
+        align-self: flex-start;
+        order: 2;
+        /* max-width: 80%; */
+        /* bottom: 6rem; */
+        /* width: 100%; */
     `}
 `
 

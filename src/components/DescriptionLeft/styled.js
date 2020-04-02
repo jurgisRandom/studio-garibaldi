@@ -4,11 +4,11 @@ import { Link } from 'gatsby'
 
 export const TextContainer = styled.div`
     height: fit-content;
-    align-self: flex-end;
+    border: 1px solid red;
+    order: -1;
 
      ${media.greaterThan('huge')`
         max-width: 20%;
-
     `}
     ${media.between('large', 'huge')`
         max-width: 30%;
@@ -19,12 +19,7 @@ export const TextContainer = styled.div`
         width: 100%;
     `}
     ${media.lessThan('medium')`
-        margin: 0 auto;
-        max-width: 80%;
-        left: 3rem;
-        bottom: 15rem;
-        width: 100%;
-        align-self: flex-end;
+        align-self:flex-start;
     `};
 `
 

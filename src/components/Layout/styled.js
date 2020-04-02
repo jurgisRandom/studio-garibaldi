@@ -7,12 +7,15 @@ export const SiteContent = styled.section``
 
 export const Container = styled.div`
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: space-between;
     flex-direction: row;
     padding: 5rem;
     ${media.lessThan('medium')`
         padding: 3rem;
+        justify-content: flex-end;
         flex-direction: column;
+
 
   `}
 `

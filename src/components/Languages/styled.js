@@ -13,13 +13,15 @@ export const LanguageContainer = styled.div`
 
     ${media.lessThan('medium')`
         /* margin: 0 0 1rem 0; */
-        position: inherit;
+        /* position: inherit;
         margin: 2rem auto;
         max-width: 80%;
         left: 3rem;
         bottom: 15rem;
-        width: 100%;
+        width: 100%; */
+        position: inherit;
         align-self: flex-start;
+        order:-1;
     `}
     ${media.lessThan('535px')`
         /* top: 65%; */

@@ -5,7 +5,8 @@ import { Link } from 'gatsby'
 export const TextContainer = styled.div`
     height: fit-content;
     border: 1px solid blue;
-    flex-grow: 0;
+    flex:1;
+
     /* height: fit-content; */
     /* align-self: flex-end; */
     /* margin-left: auto; */
@@ -29,6 +30,8 @@ export const TextContainer = styled.div`
     ${media.lessThan('medium')`
         align-self: flex-start;
         order: 2;
+        flex:0;
+
         /* max-width: 80%; */
         /* bottom: 6rem; */
         /* width: 100%; */

@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 export const LogoContainer = styled.figure`
     height: fit-content;
-    flex-grow: 0;
+    flex:1;
     border: 1px solid green;
     align-self:center;
     justify-self: center;
@@ -21,8 +21,6 @@ export const LogoContainer = styled.figure`
     ${media.lessThan('large')`
     background-color:green;
 
-        /* width: 50%; */
-        /* align-self: center; */
     `}
     ${media.lessThan('medium')`
     background-color:yellow;

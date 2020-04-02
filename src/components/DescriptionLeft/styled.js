@@ -6,20 +6,22 @@ export const TextContainer = styled.div`
     height: fit-content;
     border: 1px solid red;
     order: -1;
+    flex:1;
 
      ${media.greaterThan('huge')`
-        max-width: 20%;
+        /* max-width: 20%; */
     `}
     ${media.between('large', 'huge')`
-        max-width: 30%;
+        /* max-width: 30%; */
     `}
     ${media.between('medium', 'large')`
-        max-width: 30%;
-        left: 5rem;
-        width: 100%;
+        /* max-width: 30%; */
+
     `}
     ${media.lessThan('medium')`
         align-self:flex-start;
+    flex:0;
+
     `};
 `
 

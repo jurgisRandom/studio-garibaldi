@@ -25,8 +25,7 @@ export const Text = styled.p`
     `}
 
     ${media.lessThan('medium')`
-        line-height: 3.5rem;
-        font-size: 2.7rem;
+        font-size: 2rem;
         text-align: left;
     `}
 `

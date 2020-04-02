@@ -23,8 +23,8 @@ export const Text = styled.p`
     `}
 
     ${media.lessThan('medium')`
-        line-height: 3.5rem;
-        font-size: 2.7rem;
+        line-height: 2.3rem;
+        font-size: 2rem;
 
     `}
 `

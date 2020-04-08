@@ -2,7 +2,6 @@ backend:
     name: github
     repo: studioGaribaldi/studio-garibaldi
 display_url: https://studio-garibaldi.netlify.com
-publish_mode: editorial_workflow
 media_folder: 'static/assets/img'
 public_folder: 'assets/img'
 show_preview_links: true

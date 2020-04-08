@@ -11,7 +11,7 @@ const Languages = () => {
                 {locale !== 'en' ? (
                     <S.LanguageLink
                         // onClick={() => setLanguage('EN')}
-                        to="/"
+                        to="/en"
                         hrefLang="en"
                     >
                         EN
@@ -19,7 +19,7 @@ const Languages = () => {
                 ) : (
                     <S.LanguageLink
                         // onClick={() => setLanguage('NL')}
-                        to="/nl"
+                        to="/"
                         hrefLang="nl"
                     >
                         NL

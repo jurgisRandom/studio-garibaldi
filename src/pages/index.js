@@ -1,10 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
-import PostItem from '../components/PostItem'
-import TitlePage from '../components/TitlePage'
-import LocalizedLink from '../components/LocalizedLink'
-import useTranslations from '../components/useTranslations'
 
 import * as S from '../components/ListWrapper/styled'
 import Logo from '../components/Logo'
@@ -15,8 +11,6 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 
 const Index = ({ data: { markdownRemark } }) => {
-    // useTranslations is aware of the global context (and therefore also "locale")
-    // so it'll automatically give back the right translations
     return (
         <>
             <SEO title="Home" />
